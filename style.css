@@ -92,7 +92,7 @@ a:hover {
     header a {
         color: black;
         background: #ffffff;
-        text-size-adjust: 1px;
+        text-size-adjust: 10px;
         text-align: center;
         margin-right: 0;
         margin-bottom: 8px;

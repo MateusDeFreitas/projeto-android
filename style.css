@@ -71,7 +71,7 @@ header a:hover {
 a:hover {
     text-decoration: underline;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
 
     header {
         height: auto;

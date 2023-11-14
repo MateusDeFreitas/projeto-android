@@ -69,13 +69,9 @@ a:hover {
     text-decoration: underline;
 }
 @media only screen and (max-width: 600px) {
-    header {
-        height: auto;
-    }
 
     header > h1,
     header > p {
-        margin-bottom: 20px;
         border-bottom-width: 10px;
         padding-bottom: 10px;
     }

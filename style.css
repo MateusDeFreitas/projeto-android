@@ -85,6 +85,7 @@ a:hover {
     }
 
     nav {
+        display: block;
         align-items: left;
     }
 

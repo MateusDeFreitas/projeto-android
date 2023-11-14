@@ -49,6 +49,9 @@ header > p {
     border-bottom-width: 20px;
     padding-bottom: 20px;
 }
+nav {
+    display: flex;
+}
 a {
     text-decoration: none;
     color: rgba(1, 90, 46, 0.801);
@@ -70,19 +73,22 @@ a:hover {
 }
 @media only screen and (max-width: 600px) {
 
+    header {
+        height: auto;
+    }
+
     header > h1,
     header > p {
+        margin-bottom: 20px;
         border-bottom-width: 10px;
         padding-bottom: 10px;
     }
 
     nav {
-        flex-direction: column;
-        align-items: center;
+        align-items: left;
     }
 
     header a {
-        font-size: 0.9em;
         margin-right: 0;
         margin-bottom: 8px;
     }

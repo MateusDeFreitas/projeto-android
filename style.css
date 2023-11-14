@@ -159,6 +159,7 @@ footer > p {
     margin: 0px;
 }
 img {
+    width: 100%;
     display: flex;
     margin: auto;
 }
@@ -173,4 +174,7 @@ iframe {
 }
 strong {
     color: #053107;
+}
+#android {
+    max-width: 350px;
 }

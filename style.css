@@ -68,6 +68,28 @@ header a:hover {
 a:hover {
     text-decoration: underline;
 }
+@media only screen and (max-width: 600px) {
+    header {
+        height: auto;
+    }
+
+    header > h1,
+    header > p {
+        margin-bottom: 20px;
+        border-bottom-width: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
 footer > p > a {
     color:white;
 }

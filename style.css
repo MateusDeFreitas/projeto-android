@@ -54,13 +54,13 @@ a {
     color: rgba(1, 90, 46, 0.801);
     font-weight: bold;
 }
-header > a {
+header a {
     color: white;
     margin-right: 8px;
     padding: 10px;
     border-radius: 15px;
 }
-header > a:hover {
+header a:hover {
     background: #07420a;
     color: #bdfcc5;
     transition-duration: 0.5s;

@@ -11,6 +11,7 @@ body {
     background-image: linear-gradient(to bottom, #4ee56abe, #60b36fbd);
     background-attachment: fixed;
     margin: 0px;
+    box-sizing: border-box;
 }
 h1 {
     font-size: 2em;
@@ -49,17 +50,16 @@ header > p {
     border-bottom-width: 20px;
     padding-bottom: 20px;
 }
-nav {
-    display: flex;
-}
 a {
+    text-align: center;
+    display: inline-block;
+    width: 120px;
     text-decoration: none;
     color: rgba(1, 90, 46, 0.801);
     font-weight: bold;
 }
 header a {
     color: white;
-    margin-right: 8px;
     padding: 10px;
     border-radius: 15px;
 }
@@ -71,31 +71,7 @@ header a:hover {
 a:hover {
     text-decoration: underline;
 }
-@media only screen and (max-width: 500px) {
 
-    header {
-        height: auto;
-    }
-
-    header > h1,
-    header > p {
-        margin-bottom: 20px;
-        border-bottom-width: 10px;
-        padding-bottom: 10px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    header a {
-        color: black;
-        background: #ffffff;
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 8px;
-    }
-}
 footer > p > a {
     color:white;
 }
@@ -110,7 +86,6 @@ main {
 }
 div {
     background-color: white;
-    min-width: 320px;
     max-width: 800px;
     height: 100%;
     padding: 15px;
@@ -205,4 +180,79 @@ strong {
 }
 #android {
     max-width: 350px;
+}
+#abacontatos {
+    display: none;
+    position: relative;
+    z-index: 1;
+    background-color:rgba(1, 90, 46, 0.911);
+    width: 120px;
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 15px;
+    line-height: 50px;
+    left: 430px;
+    top: 20px;
+}
+#abacontatos a {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    header > h1,
+    header > p {
+        margin-bottom: 20px;
+        border-bottom-width: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: -webkit-fill-available;
+    }
+
+    header a {
+        display: block;
+        color: black;
+        background: #ffffff;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    #abacontatos {
+        display: none;
+        position: relative;
+        z-index: 1;
+        background-color:rgba(1, 90, 46, 0.911);
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 15px;
+        line-height: 20px;
+        left: 0px;
+        top: 10px;
+    }
+    
+    #abacontatos a {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

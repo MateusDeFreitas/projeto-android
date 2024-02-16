@@ -15,7 +15,13 @@
             <a href="#">Home</a>
             <a href="#">Notícias</a>
             <a href="#">Curiosidades</a>
-            <a href="#">Fale Conosco</a>
+            <a id="menucontatos" href="#" onmouseover="menucontatos()" onmouseleave="retrairMenuComDelay()">Fale Conosco</a>
+            <div id="abacontatos" onmouseover="menucontatos()">
+                <a href="#">Email</a><br>
+                <a href="#">Whatsapp</a><br>
+                <a href="#">YouTube</a><br>
+                <a href="#">Instagram</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -93,5 +99,36 @@
     <footer>
         <p>Site criado por Gustavo Guanabara para o <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a> e replicado pelo <a href="https://www.linkedin.com/in/mateus-freitas-997105247/" target="_blank">Mateus Santos de Freitas</a> por fins acadêmicos.</p>
     </footer>
+    <script>
+        var abacontatos = document.getElementById('abacontatos');
+        var timeoutId;
+
+        function menucontatos() {
+            abacontatos.style.display = 'block'
+            
+        }
+        function retrairMenuComDelay() {
+            // Função para ocultar a div após 0.2 segundos
+            timeoutId = setTimeout(function() {
+                abacontatos.style.display = 'none';
+            }, 200);
+        }
+
+        function cancelarRetrairMenu() {
+            // Função para cancelar o ocultamento da div caso o mouse entre nela
+            clearTimeout(timeoutId);
+        }
+
+        abacontatos.addEventListener('mouseenter', function() {
+            // Quando o mouse entra na div, cancelamos o ocultamento
+            cancelarRetrairMenu();
+        });
+
+        abacontatos.addEventListener('mouseleave', function() {
+            // Quando o mouse sai da div, retraímos o menu com atraso novamente
+            retrairMenuComDelay();
+        });
+
+    </script>
 </body>
 </html>
